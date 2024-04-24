@@ -6,7 +6,7 @@ import Loading from "./Loading";
 export default function Home() {
   const { loading, response: teamNames } = useTeamNames();
 
-  if (loading) return <Loading />;
+  if (loading) return null;
   return (
     <>
       <div className="container">
