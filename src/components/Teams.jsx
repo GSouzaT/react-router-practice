@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 export default function Teams() {
   const { response: teamNames, loading } = useTeamNames();
 
-  if (loading) return null;
+  if (loading) return <Loading />;
 
   return (
     <div className="container two-column">

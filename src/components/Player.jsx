@@ -7,7 +7,7 @@ export default function Player() {
 
   const { response: player, loading } = usePlayer(playerId);
 
-  if (loading) return null;
+  if (loading) return <Loading />;
 
   if (!player) {
     return null;

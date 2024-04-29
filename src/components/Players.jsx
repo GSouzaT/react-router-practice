@@ -20,7 +20,7 @@ export default function Players() {
 
   const { response: names, loading } = usePlayerNames(team);
 
-  if (loading) return null;
+  if (loading) return <Loading />;
 
   return (
     <div className="container two-column">

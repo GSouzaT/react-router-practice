@@ -27,7 +27,7 @@ export default function TeamPage() {
 
   const { teamNames, articles, team, loading } = useTeamPageData(teamId);
 
-  if (loading) return null;
+  if (loading) return <Loading />;
 
   if (!teamNames.includes(teamId)) {
     return <h1>This {teamId} is not a valid team.</h1>;
